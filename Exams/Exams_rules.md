@@ -17,6 +17,7 @@ Which type of exams you are exected to have in June? It depends:
    Be aware that some topics are pre-requisites from Big Data Tools, check the CourseIntro slides.
 
 4. **PhD students**
+   
    Oral presentation on the usage of Big Data Analytics topics in their reaseach
 
 The exam for (1) and (2) will be divided into two steps, described as follow:
