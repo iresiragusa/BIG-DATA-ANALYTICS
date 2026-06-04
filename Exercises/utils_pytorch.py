@@ -11,6 +11,29 @@ import pandas as pd
 import numpy as np
 import torch
 
+'''
+class MyDataset(Dataset):
+
+    def __init__(self, ):
+        
+
+    def __len__(self):
+
+
+    def __getitem__(self, idx):
+'''
+
+'''
+class NeuralNetwork(nn.Module):
+    def __init__(self, ):
+        super().__init__()
+    
+    def forward(self, x):
+        
+    
+    def predict(self, x):
+''' 
+
 class EarlyStopping:
     # Stops training when validation loss does not improve for `patience` consecutive epochs.
     # The best model weights are saved to disk and can be restored at the end of training.
@@ -81,11 +104,11 @@ def evaluate_epoch(model, loader, criterion, device):
         accuracy = correct   / len(loader.dataset)
         return avg_loss, accuracy
     
-def training(model, train_loader, val_loader, criterion, optimizer, early_stopping, device, max_epochs)
+def training(model, train_loader, val_loader, criterion, optimizer, early_stopping, device, max_epochs):
 
     history = {'train_loss': [], 'val_loss': [], 'val_acc': []}
 
-    for epoch in tqdm(range(1, MAX_EPOCHS + 1)):
+    for epoch in tqdm(range(1, max_epochs + 1)):
         train_loss          = train_one_epoch(model, train_loader, criterion, optimizer, device)
         val_loss, val_acc   = evaluate_epoch(model, val_loader, criterion, device)
 
